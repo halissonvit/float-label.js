@@ -7,7 +7,7 @@ Based on a UI concept by [Matt D. Smith](https://twitter.com/mds).
 
 Based on original implementation by [Mike Mitchel's](http://labs.mikemitchell.co.uk/FloatLabelJS/) [FloatLabelJS](https://github.com/m10l/FloatLabel.js) .
 
-[float-label.js demo](http://labs.mikemitchell.co.uk/float-labelJS/).
+[float-label.js demo](http://halisson.me/float-label.js).
 
 Usage
 -----
