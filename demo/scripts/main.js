@@ -1,6 +1,6 @@
 // Init SmartPlaceholders.js
 
-$( '.float-label-wrapper' ).FloatLabel();
+$( '.float-label-wrapper' ).floatLabel();
 
 // ===============
 // Demo JavaScript

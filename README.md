@@ -34,27 +34,27 @@ Add jquery.float-label.css to your websites stylesheets and jquery.float-label.j
 * Wrap the fields you wish to effect with your chosen class. Example -
 
 ```html
-<div class="js-float-label-wrapper">
+<div class="float-label-wrapper">
     <label for="name">Name</label>
-    <input id="name" type="text">E
+    <input id="name" type="text">
 </div>
 ```
 
 * Initialise float-label.js, passing the plugin your input/label wrapper class. Example -
 
 ```js
-$( '.js-float-label-wrapper' ).float-label();
+$( '.float-label-wrapper' ).floatLabel();
 ```
 
 Customisation
 -------------
 
-As float-label.js works by using CSS classes, the animations can be tweeked within `jquery.float-label.css`.
+As float-label.js works by using CSS classes, the animations can be tweeked within `jquery.float-label.scss` or `jquery.float-label.css`.
 
-If the default classes conflict with the rest of your CSS for whatever reason, you can change them by passing in paramaters when you initialise the plugin. Don't forget to update `jquery.float-label.css` with your new class names if you need to make a change.
+If the default classes conflict with the rest of your CSS for whatever reason, you can change them by passing in paramaters when you initialise the plugin. Don't forget to update `jquery.float-label.scss` or `jquery.float-label.css` with your new class names if you need to make a change.
 
 ```js
-$( '.js-float-label-wrapper' ).float-label({
+$( '.float-label-wrapper' ).floatLabel({
     populatedClass : 'custom-populated-class',
 	focusedClass : 'custom-focused-class'
 });

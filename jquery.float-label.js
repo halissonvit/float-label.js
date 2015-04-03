@@ -1,6 +1,6 @@
 (function ($) {
 
-    $.fn.FloatLabel = function (options) {
+    $.fn.floatLabel = function (options) {
 
         var defaults = {
                 populatedClass: 'populated',
