@@ -83,16 +83,16 @@ textarea:focus {
 
 /* Demo FloatLabel.js Styling */
 
-.js-float-label-wrapper label {
+.float-label-wrapper label {
 	font-weight: 500;
 }
 
-.js-float-label-wrapper.focused label,
-.js-float-label-wrapper.populated label {
+.float-label-wrapper.focused label,
+.float-label-wrapper.populated label {
 	color: #999;
 }
 
-.js-float-label-wrapper.focused.populated label {
+.float-label-wrapper.focused.populated label {
 	color: #666;
 }
 

@@ -1,0 +1,33 @@
+$js-float-label-wrapper: '.float-label-wrapper';
+$float-effect: 0.2s ease-in-out;
+
+#{$js-float-label-wrapper} {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    opacity: 0;
+  }
+
+  //  &.focused label,
+  &.populated label {
+    opacity: 1
+  }
+
+  //  &.focused input,
+  &.populated input,
+    //  &.focused textarea,
+  &.populated textarea {
+    padding-top: 2em;
+  }
+
+  input, textarea, label {
+    -webkit-transition: $float-effect;
+    -moz-transition: $float-effect;
+    -ms-transition: $float-effect;
+    -o-transition: $float-effect;
+    transition: $float-effect;
+  }
+}

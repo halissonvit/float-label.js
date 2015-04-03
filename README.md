@@ -1,31 +1,33 @@
-FloatLabel.js
+float-label.js
 =============
 
 A jQuery plugin for floating form labels.
 
 Based on a UI concept by [Matt D. Smith](https://twitter.com/mds).
 
-[FloatLabel.js demo](http://labs.mikemitchell.co.uk/FloatLabelJS/).
+Based on original implementation by [Mike Mitchel's](http://labs.mikemitchell.co.uk/FloatLabelJS/) [FloatLabelJS](https://github.com/m10l/FloatLabel.js) .
+
+[float-label.js demo](http://labs.mikemitchell.co.uk/float-labelJS/).
 
 Usage
 -----
 
-Add jquery.FloatLabel.css to your websites stylesheets and jquery.FloatLabel.js to your scripts.
+Add jquery.float-label.css to your websites stylesheets and jquery.float-label.js to your scripts.
 
-* Add jquery.FloatLabel.js to your scripts. Example -
+* Add jquery.float-label.js to your scripts. Example -
 
 ```html
 <script src="scripts/jquery.js"></script>
-<script src="scripts/jquery.FloatLabel.js"></script>
+<script src="scripts/jquery.float-label.js"></script>
 <script src="scripts/main.js"></script>
 ```
 
 
-* Add jquery.FloatLabel.css to your stylesheets. Example -
+* Add jquery.float-label.css to your stylesheets. Example -
 
 ```html
 <link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/jquery.FloatLabel.css">
+<link rel="stylesheet" href="styles/jquery.float-label.css">
 <link rel="stylesheet" href="styles/main.css">
 ```
 
@@ -34,25 +36,25 @@ Add jquery.FloatLabel.css to your websites stylesheets and jquery.FloatLabel.js 
 ```html
 <div class="js-float-label-wrapper">
     <label for="name">Name</label>
-    <input id="name" type="text">
+    <input id="name" type="text">E
 </div>
 ```
 
-* Initialise FloatLabel.js, passing the plugin your input/label wrapper class. Example -
+* Initialise float-label.js, passing the plugin your input/label wrapper class. Example -
 
 ```js
-$( '.js-float-label-wrapper' ).FloatLabel();
+$( '.js-float-label-wrapper' ).float-label();
 ```
 
 Customisation
 -------------
 
-As FloatLabel.js works by using CSS classes, the animations can be tweeked within `jquery.FloatLabel.css`.
+As float-label.js works by using CSS classes, the animations can be tweeked within `jquery.float-label.css`.
 
-If the default classes conflict with the rest of your CSS for whatever reason, you can change them by passing in paramaters when you initialise the plugin. Don't forget to update `jquery.FloatLabel.css` with your new class names if you need to make a change.
+If the default classes conflict with the rest of your CSS for whatever reason, you can change them by passing in paramaters when you initialise the plugin. Don't forget to update `jquery.float-label.css` with your new class names if you need to make a change.
 
 ```js
-$( '.js-float-label-wrapper' ).FloatLabel({
+$( '.js-float-label-wrapper' ).float-label({
     populatedClass : 'custom-populated-class',
 	focusedClass : 'custom-focused-class'
 });
