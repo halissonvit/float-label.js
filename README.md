@@ -56,6 +56,7 @@ If the default classes conflict with the rest of your CSS for whatever reason, y
 ```js
 $( '.float-label-wrapper' ).floatLabel({
     populatedClass : 'custom-populated-class',
-	focusedClass : 'custom-focused-class'
+	focusedClass : 'custom-focused-class'.
+	floatOnFocused: false
 });
 ```

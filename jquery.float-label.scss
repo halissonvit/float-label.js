@@ -11,14 +11,14 @@ $float-effect: 0.2s ease-in-out;
     opacity: 0;
   }
 
-  //  &.focused label,
+  &.focused.float label,
   &.populated label {
     opacity: 1
   }
 
-  //  &.focused input,
+  &.focused.float input,
   &.populated input,
-    //  &.focused textarea,
+  &.focused.float textarea,
   &.populated textarea {
     padding-top: 2em;
   }

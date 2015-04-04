@@ -4,7 +4,9 @@
 
         var defaults = {
                 populatedClass: 'populated',
-                focusedClass: 'focused'
+                focusedClass: 'focused',
+                floatedFocusedClass: 'float',
+                floatOnFocus: false
             },
             settings = $.extend({}, defaults, options);
 
@@ -21,6 +23,9 @@
 
             input.on('focus', function () {
                 element.addClass(settings.focusedClass);
+                if (settings.floatOnFocus) {
+                    element.addClass(settings.floatedFocusedClass);
+                }
 
                 if (input.val() === label.text()) {
                     input.val('');
@@ -32,6 +37,7 @@
 
             input.on('blur', function () {
                 element.removeClass(settings.focusedClass);
+                element.removeClass(settings.floatedFocusedClass);
 
                 if (!input.val()) {
                     input.val(label.text());

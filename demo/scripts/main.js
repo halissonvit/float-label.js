@@ -1,6 +1,6 @@
 // Init SmartPlaceholders.js
 
-$( '.float-label-wrapper' ).floatLabel();
+$('.float-label-wrapper').floatLabel({floatOnFocus: true});
 
 // ===============
 // Demo JavaScript
@@ -8,20 +8,20 @@ $( '.float-label-wrapper' ).floatLabel();
 
 // Show Modal on Submit
 
-$('#demoForm').on('submit',function( event ){
+$('#demoForm').on('submit', function (event) {
 
-	var modal = '<div class="modal"><h3>Your Product has been Saved</h3></div>',
-		blackout='<div class="blackout"></div>';
+    var modal = '<div class="modal"><h3>Your Product has been Saved</h3></div>',
+        blackout = '<div class="blackout"></div>';
 
-	$('.wrapper').prepend( blackout ).hide().fadeIn().append( modal );
-	event.preventDefault();
+    $('.wrapper').prepend(blackout).hide().fadeIn().append(modal);
+    event.preventDefault();
 
 });
 
 // Destroy Modal when Clicked
 
-$('body').on( 'click', '.blackout, .modal', function(){
-	$('.blackout').fadeOut(function(){
-		$(".modal").fadeOut();
-	});
+$('body').on('click', '.blackout, .modal', function () {
+    $('.blackout').fadeOut(function () {
+        $(".modal").fadeOut();
+    });
 });
