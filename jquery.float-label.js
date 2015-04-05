@@ -16,7 +16,9 @@
                 input = element.find('textarea, input');
 
             if (input.val() == '') {
-                input.val(label.text());
+                if (input.attr('placeholder') == '') {
+                    input.val(label.text());
+                }
             } else {
                 element.addClass(settings.populatedClass);
             }
@@ -27,8 +29,10 @@
                     element.addClass(settings.floatedFocusedClass);
                 }
 
-                if (input.val() === label.text()) {
-                    input.val('');
+                if (input.val() === label.text() || input.attr('placeholder') === label.text()) {
+                    if (input.attr('placeholder') == '') {
+                        input.val('');
+                    }
                 } else {
                     element.addClass(settings.populatedClass);
                 }
@@ -40,7 +44,9 @@
                 element.removeClass(settings.floatedFocusedClass);
 
                 if (!input.val()) {
-                    input.val(label.text());
+                    if (input.attr('placeholder') == '') {
+                        input.val(label.text());
+                    }
                     element.removeClass(settings.populatedClass);
                 }
 
